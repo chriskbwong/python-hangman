@@ -22,3 +22,15 @@ while(play):
       #print(wordList)
       if (playerGuess not in wordList):
         doubleCheck = False
+  else: 
+    missList.append(playerGuess)
+    missCount += 1
+    print ("Letters not in word: ", missList)
+    print ("You've guessed wrong ", missCount, " times")
+  
+  if ("_" not in blankList):
+    print("You managed to win :)")
+    play = False
+  if (missCount >= 10):
+    print("You're a loser :(")
+    play = False
