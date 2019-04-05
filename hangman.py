@@ -1,5 +1,5 @@
 import random 
-
+// made by chris wong, dax fulton and taiga hoeft
 wordBank = ["cooing", "pytoon", "coolmathgames", "jooce"]
 bankChoice = random.randint(0,len(wordBank)-1)
 word = wordBank[bankChoice]
